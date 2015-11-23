@@ -1,0 +1,1 @@
+ALTER TABLE TR_InviteDetails ADD ReplyTo VARCHAR(100) 

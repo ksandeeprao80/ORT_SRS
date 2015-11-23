@@ -1,0 +1,36 @@
+IF EXISTS 
+(
+	SELECT * FROM DBO.SYSOBJECTS WHERE ID = OBJECT_ID('[dbo].[UspGetSPMetaInfo]') 
+	AND OBJECTPROPERTY(id, N'IsProcedure') = 1
+)
+DROP PROCEDURE [dbo].[UspGetSPMetaInfo]
+
+GO
+
+-- EXEC UspGetSPMetaInfo 'UspGetSurveyDistributeHistory' 
+CREATE PROCEDURE DBO.UspGetSPMetaInfo
+	@SPName VARCHAR(100)
+AS
+SET NOCOUNT ON
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+BEGIN
+BEGIN TRY
+
+	SELECT 
+		SP.Name AS SPName, PM.Name AS Parameter, TY.Name AS DataType
+	FROM SYS.PROCEDURES SP
+	INNER JOIN SYS.PARAMETERS PM 
+		ON SP.Object_Id = PM.Object_Id 
+		AND SP.Name = LTRIM(RTRIM(@SPName))
+	INNER JOIN SYS.Types TY 
+		ON PM.System_Type_Id = TY.System_Type_Id
+ 
+END TRY  
+  
+BEGIN CATCH
+	SELECT Error_Number() AS ErrorNumber, Error_Message() AS ErrorMessage
+END CATCH 
+
+SET NOCOUNT OFF
+END 
+ 

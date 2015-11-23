@@ -1,0 +1,40 @@
+USE [ORT_SRS]
+GO
+
+/****** Object:  Table [dbo].[MS_Languages]    Script Date: 07/31/2012 12:25:25 ******/
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[MS_Languages]') AND type in (N'U'))
+DROP TABLE [dbo].[MS_Languages]
+GO
+
+USE [ORT_SRS]
+GO
+
+/****** Object:  Table [dbo].[MS_Languages]    Script Date: 07/31/2012 12:25:26 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[MS_Languages](
+	[LanguageId] [int] IDENTITY(1,1) NOT NULL,
+	[LangauageName] [varchar](50) NOT NULL,
+ CONSTRAINT [PK_MS_Languages] PRIMARY KEY CLUSTERED 
+(
+	[LanguageId] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY],
+ CONSTRAINT [IX_MS_Languages_1] UNIQUE NONCLUSTERED 
+(
+	[LangauageName] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+

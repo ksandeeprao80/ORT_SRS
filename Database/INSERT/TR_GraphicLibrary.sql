@@ -1,0 +1,2 @@
+INSERT INTO TR_GraphicLibrary(QuestionId,TriggerExpression,TrueAction,FalseAction,SendAtEnd,MessageLibId,EmailDetailId)
+VALUES (1,'Survey Testing','SRS Survey Testing','SRSTesting.DOC','Test','2012-07-11')

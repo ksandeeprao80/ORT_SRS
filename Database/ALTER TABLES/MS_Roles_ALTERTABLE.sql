@@ -1,0 +1,12 @@
+
+ALTER TABLE DBO.MS_Roles ADD OpenAccess CHAR(2)
+GO
+UPDATE DBO.MS_Roles SET OpenAccess = CASE WHEN RoleType = 'SA' THEN 'Y' ELSE 'N' END
+
+GO
+
+ALTER TABLE DBO.MS_PlayList ALTER COLUMN PlayListName VARCHAR(150) NOT NULL
+
+
+
+

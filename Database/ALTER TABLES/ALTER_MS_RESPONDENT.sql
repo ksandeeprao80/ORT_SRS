@@ -1,0 +1,1 @@
+alter table MS_Respondent alter column BirthDate varchar(20)

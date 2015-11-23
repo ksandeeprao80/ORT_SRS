@@ -1,0 +1,1 @@
+sp_RENAME 'TR_MessageLibrary.TempleteName', 'TemplateName' , 'COLUMN'

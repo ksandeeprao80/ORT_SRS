@@ -1,0 +1,1 @@
+ALTER TABLE TR_QuestionLibrary ALTER COLUMN QuestionId INT NULL

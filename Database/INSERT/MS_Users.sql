@@ -1,0 +1,6 @@
+INSERT INTO MS_Users(UserName,UserPassword,CustomerId,EmailId,IsActive,UserType)
+VALUES ('jdias','abc',1,'jdias@winsoftech.com',1,'G')
+INSERT INTO MS_Users(UserName,UserPassword,CustomerId,EmailId,IsActive,UserType)
+VALUES ('prasadk','abc',1,'',1,'P')
+INSERT INTO MS_Users(UserName,UserPassword,CustomerId,EmailId,IsActive,UserType)
+VALUES ('sandeepr','abc',1,'sandeepr@winsoftech.com',1,'I')

@@ -1,0 +1,1 @@
+ALTER TABLE TR_Report ADD IsActive INT

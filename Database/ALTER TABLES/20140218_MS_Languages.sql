@@ -1,0 +1,1 @@
+ALTER TABLE DBO.MS_Languages ADD IsActive INT

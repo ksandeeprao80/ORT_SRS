@@ -1,0 +1,33 @@
+IF EXISTS 
+(
+	SELECT * FROM DBO.SYSOBJECTS WHERE ID = OBJECT_ID('[dbo].[UspComboLibrary]') 
+	AND OBJECTPROPERTY(id, N'IsProcedure') = 1
+)
+DROP PROCEDURE [dbo].[UspComboLibrary]
+
+GO
+--EXEC UspComboLibrary 4
+ 
+CREATE PROCEDURE DBO.UspComboLibrary
+	@LibTypeId INT
+AS
+SET NOCOUNT ON
+SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED
+BEGIN
+BEGIN TRY
+
+	SELECT  
+		TR.LibId, TR.LibName, MLT.TypeName
+	FROM DBO.TR_Library TR
+	INNER JOIN MS_LibraryType MLT
+		ON TR.LibTypeId = MLT.LibTypeId
+	WHERE TR.LibTypeId = @LibTypeId
+
+END TRY  
+  
+BEGIN CATCH
+	SELECT Error_Number() AS ErrorNumber, Error_Message() AS ErrorMessage
+END CATCH 
+
+SET NOCOUNT OFF
+END

@@ -1,0 +1,1 @@
+ALTER TABLE DBO.TR_GraphicFiles ADD CustomerId INT, UploadedBy INT, UploadedDate DATETIME

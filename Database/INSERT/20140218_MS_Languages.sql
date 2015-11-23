@@ -1,0 +1,13 @@
+SET IDENTITY_INSERT MS_Languages ON
+
+INSERT INTO MS_Languages
+(LanguageId, LangauageName, IsActive)
+SELECT 9,'RUSSIAN', 1 UNION
+SELECT 10,'TURKISH', 1 
+
+SET IDENTITY_INSERT MS_Languages OFF
+
+GO
+
+UPDATE MS_Languages
+SET IsActive = CASE WHEN LangauageName IN('RUSSIAN','TURKISH','ENGLISH') THEN 1 ELSE 0 END

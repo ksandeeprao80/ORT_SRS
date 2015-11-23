@@ -1,0 +1,1 @@
+ALTER TABLE DBO.TR_TrendCrossTabs ADD BaseOptionName VARCHAR(150)

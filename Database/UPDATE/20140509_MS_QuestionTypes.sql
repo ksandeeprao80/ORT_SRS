@@ -1,0 +1,4 @@
+--UPDATE DBO.MS_QuestionTypes
+--SET QuestionCode = 'DisqualificationMessage',
+--    QuestionName = 'DisqualificationMessage'
+--WHERE QuestionTypeId = 15    

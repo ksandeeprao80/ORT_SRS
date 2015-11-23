@@ -1,0 +1,6 @@
+INSERT INTO MS_QuotaType(QuotaName)
+VALUES ('HISPANIC')
+INSERT INTO MS_QuotaType(QuotaName)
+VALUES ('MEN')
+INSERT INTO MS_QuotaType(QuotaName)
+VALUES ('WOMEN')

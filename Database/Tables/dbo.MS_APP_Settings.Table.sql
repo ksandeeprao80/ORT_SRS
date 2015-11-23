@@ -1,0 +1,22 @@
+USE [ORT_SRS]
+GO
+/****** Object:  Table [dbo].[MS_App_Settings]    Script Date: 06/22/2012 10:26:24 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+SET ANSI_PADDING ON
+GO
+CREATE TABLE [dbo].[MS_App_Settings](
+	[Setting_Id] [int] IDENTITY(1,1) NOT NULL,
+	[Param_Name] [varchar](50) NULL,
+	[Param_Value] [varchar](200) NULL,
+	[Param_Type] [varchar](50) NULL,
+ CONSTRAINT [PK_MS_APP_Settings] PRIMARY KEY CLUSTERED 
+(
+	[Setting_Id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+SET ANSI_PADDING OFF
+GO

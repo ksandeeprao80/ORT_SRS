@@ -1,0 +1,1 @@
+ALTER TABLE DBO.TempRespondent ADD SessionId INT

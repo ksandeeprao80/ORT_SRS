@@ -1,0 +1,3 @@
+ALTER TABLE TR_Responses DROP CONSTRAINT FK_TR_Responses_MS_Respondent
+GO
+ALTER TABLE TR_Responses ADD SessionId VARCHAR(100)

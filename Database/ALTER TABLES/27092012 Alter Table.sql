@@ -1,0 +1,3 @@
+ALTER TABLE TR_MessageLibrary ALTER COLUMN MessageText VARCHAR(MAX)
+go
+ALTER TABLE TR_MessageLibrary ALTER COLUMN MessageDescription VARCHAR(150)

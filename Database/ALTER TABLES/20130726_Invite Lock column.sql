@@ -1,0 +1,3 @@
+ALTER TABLE DBO.TR_Invite ADD Locked INT NULL
+
+ALTER TABLE DBO.TR_InviteDetails ADD Locked INT NULL

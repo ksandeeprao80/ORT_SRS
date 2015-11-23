@@ -1,0 +1,6 @@
+INSERT INTO MS_QuestionTypes(QuestionCode,QuestionName,SampleTemplate,BlankTemplate)
+VALUES ('BPMATRIX','BI POLAR','BPMATRIX_SAMPLE.HTML','BPMATRIX_BLANK.HTML')
+INSERT INTO MS_QuestionTypes(QuestionCode,QuestionName,SampleTemplate,BlankTemplate)
+VALUES ('MULTICHOICE','MULTIPLE CHOICE','MULTICHOICE_SAMPLE.HTML','MULTICHOICE_BLANK.HTML')
+INSERT INTO MS_QuestionTypes(QuestionCode,QuestionName,SampleTemplate,BlankTemplate)
+VALUES ('TEXTENTRY','TEXT ENTRY','TEXTENTRY_SAMPLE.HTML','TEXTENTRY_BLANK.HTML')

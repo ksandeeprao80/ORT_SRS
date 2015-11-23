@@ -1,0 +1,1 @@
+ALTER TABLE DBO.TR_Responses ADD Status CHAR(5)

@@ -1,0 +1,2 @@
+ALTER TABLE MS_WebRequestInfo
+ADD CONSTRAINT Req_Date CHECK (ReqDate= GETDATE())

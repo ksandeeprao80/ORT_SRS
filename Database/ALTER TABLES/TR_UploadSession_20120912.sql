@@ -1,0 +1,1 @@
+ALTER TABLE DBO.TR_UploadSession ADD Extension VARCHAR(10)

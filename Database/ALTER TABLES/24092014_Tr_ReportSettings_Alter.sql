@@ -1,0 +1,1 @@
+ALTER TABLE TR_ReportSettings ADD TabType varchar(50)

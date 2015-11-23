@@ -1,0 +1,1 @@
+ALTER TABLE TR_QuestionLibrary DROP CONSTRAINT FK_TR_Question_Library_TR_Survey_Questions

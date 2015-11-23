@@ -1,0 +1,1 @@
+ALTER TABLE DBO.MS_Roles ADD Hierarchy INT

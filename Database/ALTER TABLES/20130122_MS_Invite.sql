@@ -1,0 +1,9 @@
+ALTER TABLE DBO.MS_Invite ADD IsActive INT DEFAULT(1)   
+GO
+UPDATE DBO.MS_Invite SET IsActive = 1
+
+GO
+ALTER TABLE DBO.MS_Invite ADD SendNow INT 
+GO
+UPDATE DBO.MS_Invite SET SendNow = 1
+

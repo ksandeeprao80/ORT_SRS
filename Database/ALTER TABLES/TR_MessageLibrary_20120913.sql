@@ -1,0 +1,1 @@
+ALTER TABLE DBO.TR_MessageLibrary ADD TempleteName VARCHAR(50)

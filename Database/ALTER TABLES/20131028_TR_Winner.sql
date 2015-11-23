@@ -1,0 +1,1 @@
+ALTER TABLE DBO.TR_Winner ADD RespondentId INT
